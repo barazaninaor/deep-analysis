@@ -9,7 +9,7 @@ import About from '../../pages/About/About';
 export const BrowseRouter = () => {
     return (
         <div className="app-wrapper">
-            <BrowserRouter>
+            <BrowserRouter basename="/deep-analysis/">
                 {/* ה-Navbar מקבל כעת אך ורק את מערך הלינקים הסטטיים */}
                 <NewNavBar theArr={arrForNav} />
                 
