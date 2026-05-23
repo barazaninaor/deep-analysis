@@ -1,0 +1,80 @@
+.feature-grid-container {
+  /* הגדלנו את המרחק מהכפתור שמעליו */
+  padding: 60px 20px 80px 20px; 
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 3rem;
+  justify-content: center;
+}
+
+.feature-card {
+  background: #1d36db; 
+  padding: 3.5rem 2.5rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-icon {
+  font-size: 3.5rem;
+  margin-bottom: 2.5rem;
+  background: #ffffff;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.feature-card-title {
+  /* הגדלת הכותרת והפיכתה למודגשת מאוד */
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-weight: 800; /* Extra Bold */
+  letter-spacing: 0.5px;
+  text-transform: uppercase; /* נותן מראה מקצועי יותר */
+}
+
+.feature-card-description {
+  /* הגדלת גוף הטקסט ושינוי ללבן מודגש לקריאות מקסימלית */
+  font-size: 1.2rem; /* פונט גדול יותר */
+  color: #ffffff;    /* לבן נקי */
+  font-weight: 600;  /* מודגש */
+  line-height: 1.6;
+  max-width: 300px;
+  /* הוספת צל עדין לטקסט כדי להפריד אותו מהרקע הכחול */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* אפקט Hover משופר */
+.feature-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  background: #2541f5; /* הבהרה קלה ב-hover */
+}
+
+@media (max-width: 768px) {
+  .feature-grid-container {
+    padding: 40px 15px;
+  }
+  
+  .feature-card-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-card-description {
+    font-size: 1.1rem;
+  }
+}

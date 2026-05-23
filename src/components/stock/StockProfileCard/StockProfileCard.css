@@ -1,0 +1,115 @@
+.stock-profile-card {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: rgba(30, 30, 30, 0.6);
+    border: 1px solid rgba(0, 157, 255, 0.2);
+    border-radius: 16px;
+    padding: 30px; /* הגדלתי מעט את הריווח הפנימי */
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    text-align: left;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.company-name {
+    font-size: 2.2rem; 
+    font-weight: 700;
+    margin: 0;
+}
+
+.ticker-label {
+    color: #009dff;
+    font-size: 1.1rem; 
+    font-weight: 500;
+}
+
+.logo-container {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    background: white;
+    border-radius: 12px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.logo-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.current-price {
+    display: block;
+    font-size: 2.8rem; 
+    font-weight: 800;
+}
+
+.price-change {
+    font-size: 1.2rem; 
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.price-change.up { 
+    color: #00ff88 !important; 
+    background: rgba(0, 255, 136, 0.1); 
+}
+
+.price-change.down { 
+    color: #ff4d4d !important; 
+    background: rgba(255, 77, 77, 0.1); 
+}
+
+.profile-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.9rem; 
+    color: #aaa; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.stat-value {
+    font-size: 1.25rem; 
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.company-description h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.company-description p {
+    font-size: 1.1rem; 
+    line-height: 1.7;
+    color: #dddddd;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

@@ -1,0 +1,178 @@
+/* Analyze.css */
+
+.analyze-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    background-color: #1c2128;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: border-color 0.2s;
+    position: relative;
+}
+
+.search-form:focus-within {
+    border-color: #58a6ff;
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.1);
+}
+
+.search-form input {
+    background: none;
+    border: none;
+    color: #c9d1d9;
+    font-size: 1.1rem;
+    width: 100%;
+    outline: none;
+    padding: 0.5rem 0;
+}
+
+.search-form input::placeholder {
+    color: #484f58;
+}
+
+.analyze-btn {
+    background-color: #051df0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-left: 10px;
+}
+
+.analyze-btn:hover {
+    background-color: #6489d3;
+}
+
+.analyze-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.suggestions-list {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    right: 0;
+    background-color: #1c2128;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.suggestions-list li {
+    padding: 12px 16px;
+    cursor: pointer;
+    text-align: left;
+    color: #c9d1d9;
+    border-bottom: 1px solid #30363d;
+}
+
+.suggestions-list li:last-child {
+    border-bottom: none;
+}
+
+.suggestions-list li:hover, 
+.suggestions-list li.selected {
+    background-color: #30363d;
+}
+
+/* Layout Content */
+.analyze-main-layout {
+    display: flex;
+    width: 100%; /* שינוי ל-100% כדי למקסם שליטה */
+    margin-top: 2rem;
+    /* הסרנו gap כדי לשלוט במיקום הטאב המרכזי דרך padding */
+}
+
+.analyze-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    /* המרכוז כאן הוא יחסי לדיב עצמו, שמתחיל אחרי ה-Navbar */
+    align-items: center; 
+    padding: 20px;
+}
+
+.analyze-loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    width: 100%;
+}
+
+/* ==========================================================================
+   --- Responsiveness (התאמת עמוד הניתוח הפיננסי למובייל) ---
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* 1. שינוי פריסת הדף כולה לטור אנכי (אם יש סיידבר, הוא יירד מתחת או יעלה מעל לגרפים) */
+    .analyze-main-layout {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    /* 2. התאמת אזור התוכן הראשי (פחות פדינג כדי לנצל את רוחב הטלפון) */
+    .analyze-content {
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* 3. סידור שורת החיפוש */
+    .search-container {
+        margin-top: 1.5rem;
+        width: 92%; /* ניצול שטח מקסימלי מהמסך הצר */
+    }
+
+    .search-form {
+        padding: 0.6rem 0.8rem; /* הגדלת שטח הלחיצה */
+    }
+
+    .search-form input {
+        font-size: 1rem; /* מניעת זום-אין אוטומטי ומציק של דפדפנים בנייד */
+    }
+
+    .analyze-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        margin-left: 5px;
+    }
+
+    /* 4. רשימת ההצעות הופכת ליותר ידידותית למגע אצבע */
+    .suggestions-list li {
+        padding: 14px 16px; /* הגדלת המרווח הפיזי כדי למנוע לחיצות שגויות באגודל */
+        font-size: 0.95rem;
+    }
+
+    /* 5. התאמה כללית לגרפים וטבלאות (אם ישנם בתוך הקומפוננטות הפנימיות) */
+    .recharts-responsive-container, 
+    .chart-container, 
+    table {
+        width: 100% !important;
+        overflow-x: auto; /* אם יש טבלה פיננסית רחבה, היא תאפשר גלילה רוחבית פנימית במקום לשבור את האתר */
+        display: block;
+    }
+}

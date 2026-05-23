@@ -1,0 +1,6 @@
+[
+  { "symbol": "AAPL", "name": "Apple Inc." },
+  { "symbol": "MSFT", "name": "Microsoft Corporation" },
+  { "symbol": "NVDA", "name": "NVIDIA Corporation" },
+  { "symbol": "AMZN", "name": "Amazon.com, Inc." }
+]

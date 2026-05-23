@@ -1,0 +1,350 @@
+[
+  {
+    "symbol": "NVDA",
+    "companyName": "NVIDIA Corporation"
+  },
+  {
+    "symbol": "META",
+    "companyName": "Meta Platforms, Inc."
+  },
+  {
+    "symbol": "BIDU",
+    "companyName": "Baidu, Inc."
+  },
+  {
+    "symbol": "BA",
+    "companyName": "The Boeing Company"
+  },
+  {
+    "symbol": "TGT",
+    "companyName": "Target Corporation"
+  },
+  {
+    "symbol": "PINS",
+    "companyName": "Pinterest, Inc."
+  },
+  {
+    "symbol": "T",
+    "companyName": "AT&T Inc."
+  },
+  {
+    "symbol": "V",
+    "companyName": "Visa Inc."
+  },
+  {
+    "symbol": "KO",
+    "companyName": "The Coca-Cola Company"
+  },
+  {
+    "symbol": "SOFI",
+    "companyName": "SoFi Technologies, Inc."
+  },
+  {
+    "symbol": "CVX",
+    "companyName": "Chevron Corporation"
+  },
+  {
+    "symbol": "SBUX",
+    "companyName": "Starbucks Corporation"
+  },
+  {
+    "symbol": "XOM",
+    "companyName": "Exxon Mobil Corporation"
+  },
+  {
+    "symbol": "MSFT",
+    "companyName": "Microsoft Corporation"
+  },
+  {
+    "symbol": "DAL",
+    "companyName": "Delta Air Lines, Inc."
+  },
+  {
+    "symbol": "INTC",
+    "companyName": "Intel Corporation"
+  },
+  {
+    "symbol": "WMT",
+    "companyName": "Walmart Inc."
+  },
+  {
+    "symbol": "GM",
+    "companyName": "General Motors Company"
+  },
+  {
+    "symbol": "CSCO",
+    "companyName": "Cisco Systems, Inc."
+  },
+  {
+    "symbol": "SIRI",
+    "companyName": "Sirius XM Holdings Inc."
+  },
+  {
+    "symbol": "NOK",
+    "companyName": "Nokia Oyj"
+  },
+  {
+    "symbol": "TSM",
+    "companyName": "Taiwan Semiconductor Manufacturing Company Limited"
+  },
+  {
+    "symbol": "PEP",
+    "companyName": "PepsiCo, Inc."
+  },
+  {
+    "symbol": "RKT",
+    "companyName": "Rocket Companies, Inc."
+  },
+  {
+    "symbol": "ETSY",
+    "companyName": "Etsy, Inc."
+  },
+  {
+    "symbol": "ZM",
+    "companyName": "Zoom Communications, Inc."
+  },
+  {
+    "symbol": "UBER",
+    "companyName": "Uber Technologies, Inc."
+  },
+  {
+    "symbol": "BABA",
+    "companyName": "Alibaba Group Holding Limited"
+  },
+  {
+    "symbol": "JNJ",
+    "companyName": "Johnson & Johnson"
+  },
+  {
+    "symbol": "LMT",
+    "companyName": "Lockheed Martin Corporation"
+  },
+  {
+    "symbol": "TLRY",
+    "companyName": "Tilray Brands, Inc."
+  },
+  {
+    "symbol": "TSLA",
+    "companyName": "Tesla, Inc."
+  },
+  {
+    "symbol": "SONY",
+    "companyName": "Sony Group Corporation"
+  },
+  {
+    "symbol": "AAL",
+    "companyName": "American Airlines Group Inc."
+  },
+  {
+    "symbol": "SNAP",
+    "companyName": "Snap Inc."
+  },
+  {
+    "symbol": "GE",
+    "companyName": "GE Aerospace"
+  },
+  {
+    "symbol": "BAC",
+    "companyName": "Bank of America Corporation"
+  },
+  {
+    "symbol": "LCID",
+    "companyName": "Lucid Group, Inc."
+  },
+  {
+    "symbol": "HCA",
+    "companyName": "HCA Healthcare, Inc."
+  },
+  {
+    "symbol": "MGM",
+    "companyName": "MGM Resorts International"
+  },
+  {
+    "symbol": "VWO",
+    "companyName": "Vanguard FTSE Emerging Markets ETF"
+  },
+  {
+    "symbol": "COST",
+    "companyName": "Costco Wholesale Corporation"
+  },
+  {
+    "symbol": "NKE",
+    "companyName": "NIKE, Inc."
+  },
+  {
+    "symbol": "CCL",
+    "companyName": "Carnival Corporation & plc"
+  },
+  {
+    "symbol": "VIAC",
+    "companyName": "Paramount Global"
+  },
+  {
+    "symbol": "SQ",
+    "companyName": "Block, Inc."
+  },
+  {
+    "symbol": "ATVI",
+    "companyName": "Activision Blizzard, Inc."
+  },
+  {
+    "symbol": "CPRX",
+    "companyName": "Catalyst Pharmaceuticals, Inc."
+  },
+  {
+    "symbol": "VZ",
+    "companyName": "Verizon Communications Inc."
+  },
+  {
+    "symbol": "ROKU",
+    "companyName": "Roku, Inc."
+  },
+  {
+    "symbol": "DOCU",
+    "companyName": "DocuSign, Inc."
+  },
+  {
+    "symbol": "DIS",
+    "companyName": "The Walt Disney Company"
+  },
+  {
+    "symbol": "PLTR",
+    "companyName": "Palantir Technologies Inc."
+  },
+  {
+    "symbol": "PYPL",
+    "companyName": "PayPal Holdings, Inc."
+  },
+  {
+    "symbol": "UAL",
+    "companyName": "United Airlines Holdings, Inc."
+  },
+  {
+    "symbol": "NIO",
+    "companyName": "NIO Inc."
+  },
+  {
+    "symbol": "F",
+    "companyName": "Ford Motor Company"
+  },
+  {
+    "symbol": "GOOGL",
+    "companyName": "Alphabet Inc."
+  },
+  {
+    "symbol": "AMZN",
+    "companyName": "Amazon.com, Inc."
+  },
+  {
+    "symbol": "MRNA",
+    "companyName": "Moderna, Inc."
+  },
+  {
+    "symbol": "WBA",
+    "companyName": "Walgreens Boots Alliance, Inc."
+  },
+  {
+    "symbol": "AAPL",
+    "companyName": "Apple Inc."
+  },
+  {
+    "symbol": "UNH",
+    "companyName": "UnitedHealth Group Incorporated"
+  },
+  {
+    "symbol": "FDX",
+    "companyName": "FedEx Corporation"
+  },
+  {
+    "symbol": "HOOD",
+    "companyName": "Robinhood Markets, Inc."
+  },
+  {
+    "symbol": "CARR",
+    "companyName": "Carrier Global Corporation"
+  },
+  {
+    "symbol": "MRO",
+    "companyName": "Marathon Oil Corporation"
+  },
+  {
+    "symbol": "RIOT",
+    "companyName": "Riot Platforms, Inc."
+  },
+  {
+    "symbol": "ADBE",
+    "companyName": "Adobe Inc."
+  },
+  {
+    "symbol": "WFC",
+    "companyName": "Wells Fargo & Company"
+  },
+  {
+    "symbol": "SHOP",
+    "companyName": "Shopify Inc."
+  },
+  {
+    "symbol": "ET",
+    "companyName": "Energy Transfer LP"
+  },
+  {
+    "symbol": "JPM",
+    "companyName": "JPMorgan Chase & Co."
+  },
+  {
+    "symbol": "GS",
+    "companyName": "The Goldman Sachs Group, Inc."
+  },
+  {
+    "symbol": "C",
+    "companyName": "Citigroup Inc."
+  },
+  {
+    "symbol": "ABBV",
+    "companyName": "AbbVie Inc."
+  },
+  {
+    "symbol": "AMD",
+    "companyName": "Advanced Micro Devices, Inc."
+  },
+  {
+    "symbol": "RBLX",
+    "companyName": "Roblox Corporation"
+  },
+  {
+    "symbol": "SPYG",
+    "companyName": "State Street SPDR Portfolio S&P 500 Growth ETF"
+  },
+  {
+    "symbol": "SPY",
+    "companyName": "State Street SPDR S&P 500 ETF Trust"
+  },
+  {
+    "symbol": "RIVN",
+    "companyName": "Rivian Automotive, Inc."
+  },
+  {
+    "symbol": "COIN",
+    "companyName": "Coinbase Global, Inc."
+  },
+  {
+    "symbol": "NFLX",
+    "companyName": "Netflix, Inc."
+  },
+  {
+    "symbol": "PFE",
+    "companyName": "Pfizer Inc."
+  },
+  {
+    "symbol": "BILI",
+    "companyName": "Bilibili Inc."
+  },
+  {
+    "symbol": "FUBO",
+    "companyName": "fuboTV Inc."
+  },
+  {
+    "symbol": "TWTR",
+    "companyName": "Twitter, Inc. (delisted)"
+  }
+]

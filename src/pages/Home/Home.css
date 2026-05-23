@@ -1,0 +1,171 @@
+/* --- Global Container --- */
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-cta {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.primary-btn {
+  background-color: #051df0;
+  color: white;
+  padding: 16px 40px;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.primary-btn:hover {
+  background-color: #3f50e9;
+  box-shadow: 0 0 20px rgba(5, 29, 240, 0.6);
+  transform: translateY(-3px);
+}
+
+/* --- Feature Grid Layout (שליטה על המיקום בלבד) --- */
+.info-section {
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 40px 20px; /* מרחק בין הכפתור לכרטיסיות */
+}
+
+/* --- About / Buffett Quote Section --- */
+.about-section {
+  width: 90%;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 60px 40px;
+  background: linear-gradient(145deg, #161b22, #1e293b);
+  border: 1px solid rgba(48, 54, 61, 0.8);
+  border-radius: 24px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  animation: slideIn 0.8s ease-out;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.quote-badge {
+  display: inline-block;
+  background: rgba(5, 29, 240, 0.2);
+  color: #58a6ff;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  border: 1px solid rgba(88, 166, 255, 0.3);
+}
+
+.about-content h2 {
+  color: #ffffff;
+  font-size: 2.5rem; 
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+.about-content p {
+  color: #c9d1d9;
+  font-size: 1.3rem; 
+  line-height: 1.8;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-content strong {
+  color: #58a6ff;
+  font-weight: 700;
+}
+
+/* --- Animations --- */
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ==========================================================================
+   --- Responsiveness (התאמה מלאה לנייד) ---
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* 1. התאמת ה-Hero Section */
+  .hero-section {
+    padding: 0 15px;
+  }
+
+  .hero-cta {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* כפתור גדול ונוח ללחיצה עם האגודל */
+  .primary-btn {
+    width: 90%; 
+    max-width: 320px;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  /* 2. התאמת אזור הכרטיסיות (רווחים) */
+  .info-section {
+    padding: 20px 10px;
+  }
+
+  /* 3. התאמת אזור הציטוט של באפט */
+  .about-section {
+    padding: 35px 20px;
+    width: 92%;
+    margin: 40px auto; /* צמצום המרווח האנכי העצום */
+    border-radius: 16px; /* עיגול מעט עדין יותר לנייד */
+  }
+
+  .quote-badge {
+    font-size: 0.8rem;
+    padding: 6px 16px;
+    margin-bottom: 20px;
+  }
+
+  .about-content h2 {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+  }
+  
+  .about-content p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+}

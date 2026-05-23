@@ -1,0 +1,142 @@
+/* StickerPrice.css */
+
+.sticker-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 40px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    /* התיקון הקריטי: פיצוי ויזואלי על רוחב תפריט הצד */
+    padding-right: 200px; 
+    box-sizing: border-box;
+}
+
+.sticker-card {
+    width: 100%;
+    max-width: 380px; 
+    padding: 30px;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    background-color: #0d1117;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+
+.sticker-header {
+    border-left: 4px solid #58a6ff;
+    padding-left: 12px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.sticker-header h4 {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #f0f6fc;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.sticker-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #c9d1d9;
+}
+
+.sticker-table td {
+    padding: 12px 0;
+    font-size: 0.95rem;
+}
+
+.sticker-label {
+    text-align: left;
+    color: #8b949e;
+}
+
+.sticker-value {
+    text-align: right;
+    font-weight: 500;
+    color: #f0f6fc;
+}
+
+.sticker-value-blue {
+    text-align: right;
+    font-weight: 500;
+    color: #58a6ff;
+}
+
+.sticker-divider {
+    height: 15px;
+}
+
+.sticker-row-bold {
+    border-top: 1px solid #30363d;
+}
+
+.sticker-row-bold td {
+    padding: 20px 0;
+    font-weight: bold;
+    color: #f0f6fc;
+}
+
+.sticker-price-text {
+    font-size: 1.15rem;
+}
+
+.sticker-mos-row {
+    background-color: rgba(96, 0, 252, 0.1);
+}
+
+.sticker-mos-label {
+    padding: 15px 12px !important;
+    font-weight: bold;
+    color: #00aeff !important;
+    border-radius: 6px 0 0 6px;
+}
+
+.sticker-mos-value {
+    text-align: right;
+    font-weight: bold;
+    color: #0051ff !important;
+    font-size: 1.3rem;
+    padding: 15px 12px !important;
+    border-radius: 0 6px 6px 0;
+}
+
+.analysis-pos {
+    color: #4caf50 !important; /* Green */
+}
+
+.analysis-neg {
+    color: #f44336 !important; /* Red */
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.sticker-value {
+    text-align: right;
+    padding: 8px 0;
+}
+
+.buy-signal-badge {
+    display: flex;             /* משתמשים ב-flex כדי לשלוט במיקום הפנימי */
+    justify-content: center;   /* ממרכז אופקית */
+    align-items: center;       /* ממרכז אנכית (עבור האייקון והטקסט) */
+    
+    margin-top: 20px;          /* רווח מהטבלה למעלה */
+    padding: 12px;             /* ריפוד פנימי */
+    background-color: rgba(255, 68, 68, 0.1); /* רקע אדמדם עדין */
+    border: 1px solid #ff4444; /* מסגרת בולטת */
+    border-radius: 8px;        /* פינות מעוגלות */
+    
+    color: #ff4444;            /* צבע טקסט */
+    font-weight: bold;         /* טקסט בולט */
+    text-align: center;        /* לגיבוי נוסף של המרכוז */
+    
+    width: 100%;               /* תופס את כל רוחב הכרטיס כדי שהמרכוז יהיה יחסי לכרטיס */
+    box-sizing: border-box;    /* מבטיח שה-padding לא ינפח את הרווח */
+}

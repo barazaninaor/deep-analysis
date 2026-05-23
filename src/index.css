@@ -1,0 +1,52 @@
+/* index.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    /* שילוב של שני רדיאליים ליצירת עומק בפינות העליונות */
+    background: 
+        radial-gradient(circle at 20% -10%, rgba(27, 39, 68, 0.8) 0%, transparent 40%),
+        radial-gradient(circle at 80% -10%, rgba(30, 58, 138, 0.5) 0%, transparent 40%),
+        radial-gradient(circle at 50% -20%, #1b2744 0%, #0d1117 80%) !important;
+
+    background-color: #0d1117 !important;
+    background-attachment: fixed !important;
+    
+    color: #ffffff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.5;
+}
+
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* הבטחה ששום דבר לא מסתיר את הרקע */
+    background: transparent !important;
+}
+
+/* טיפול גלובלי בכל הקבצים שמצאת בחיפוש שמסתירים את הרקע */
+.home-container, .page-container, main, section, .content-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* שדרוג הקישורים למראה ניאוני עדין */
+a {
+    color: #4facfe;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 8px rgba(79, 172, 254, 0);
+}
+
+a:hover {
+    color: #00f2fe;
+    text-shadow: 0 0 12px rgba(0, 242, 254, 0.5);
+}

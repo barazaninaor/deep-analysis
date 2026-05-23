@@ -1,0 +1,147 @@
+.NewNavBar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    /* הגדלנו את ה-padding למטה כדי לתת לו נוכחות */
+    padding: 20px 40px 25px 40px; 
+    
+    /* מראה שקוף ומחשמל */
+    background: rgba(13, 17, 23, 0.6) !important; 
+    backdrop-filter: blur(15px) saturate(180%);
+    -webkit-backdrop-filter: blur(15px) saturate(180%);
+    
+    /* קו תחתון זוהר במקום סולידי */
+    border-bottom: 1px solid rgba(35, 135, 182, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4), 
+                0 1px 15px rgba(35, 135, 182, 0.4); /* הילה כחולה למטה */
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-links-left {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links-right {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navItem a, .welcome-text {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px; /* הגדלה קלה של הפונט */
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navItem a:hover {
+    color: #00d4ff; /* כחול בהיר ומחשמל יותר */
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.6),
+                 0 0 20px rgba(0, 212, 255, 0.4);
+}
+
+/* Buttons Styling */
+.delete-nav-btn, .logout-nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.delete-nav-btn:hover {
+    color: #ff4d4d; /* Red highlight for delete */
+}
+
+.logout-nav-btn:hover {
+  color: #2387b6;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    backdrop-filter: blur(8px);
+}
+
+/* Modal Container */
+.modal-container {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #2387b6;
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.modal-container h2 {
+    margin-top: 0;
+    color: #ff4d4d;
+    font-size: 24px;
+}
+
+.modal-container p {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #cccccc;
+}
+
+/* Modal Actions */
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.btn-confirm {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-confirm:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+}
+
+.btn-cancel {
+    background: transparent;
+    color: white;
+    border: 1px solid #555;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #333;
+}

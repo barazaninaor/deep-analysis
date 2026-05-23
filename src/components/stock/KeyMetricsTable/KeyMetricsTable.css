@@ -1,0 +1,92 @@
+/* Container for the table to allow horizontal scrolling on small screens */
+.metrics-table-container {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #0d1117; /* Dark background matching the theme */
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.metrics-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: #c9d1d9;
+    font-size: 14px;
+}
+
+/* Header Styling */
+.metrics-table th {
+    background-color: #161b22;
+    color: #8b949e;
+    font-weight: 600;
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 2px solid #30363d;
+    white-space: nowrap;
+}
+
+.metrics-table th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: #161b22;
+}
+
+/* Cell Styling */
+.metrics-table td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #21262d;
+    white-space: nowrap;
+}
+
+/* First Column Styling (Metric Names) */
+.metrics-table td:first-child {
+    color: #58a6ff; /* Highlighted blue for metric names */
+    font-weight: 500;
+    background-color: transparent;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 220px;
+    border-right: 1px solid #30363d;
+}
+
+/* Section Header Styling */
+.section-header td {
+    background-color: #161b22 !important;
+    color: #8b949e !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    padding: 8px 16px !important;
+    border-bottom: 2px solid #30363d !important;
+    border-top: 1px solid #30363d !important;
+    cursor: default;
+}
+
+/* Row Hover Effect */
+.metrics-table tr:not(.section-header):hover td {
+    background-color: #161b22;
+}
+
+/* Scrollbar styling for a cleaner look */
+.metrics-table-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.metrics-table-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.metrics-table-container::-webkit-scrollbar-thumb {
+    background: #30363d;
+    border-radius: 4px;
+}
+
+.metrics-table-container::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+}

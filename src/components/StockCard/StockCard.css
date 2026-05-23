@@ -1,0 +1,62 @@
+.stock-card {
+  background-color: #1a1f26;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.stock-card:hover {
+  transform: translateY(-5px);
+  border-color: #58a6ff;
+}
+
+.stock-card.active {
+  border-color: #58a6ff;
+  background-color: #1c222a;
+  box-shadow: 0 0 15px rgba(88, 166, 255, 0.3);
+}
+
+.stock-card h3 {
+  margin: 0 0 4px 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.stock-card h4 {
+  margin: 0 0 16px 0;
+  color: #8b949e;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.stock-card p {
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e6edf3;
+}
+
+.price-gain {
+  color: #23d18b !important;
+  font-size: 18px;
+}
+
+.price-loss {
+  color: #ff4d4d !important;
+  font-size: 18px;
+}

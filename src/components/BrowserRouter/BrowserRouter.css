@@ -1,0 +1,34 @@
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: transparent; /* הרקע הכהה של האתר */
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    flex: 1;
+    /* הגדלת המרווח מהתפריט העליון כדי שלא יידבקו */
+    padding-top: 80px; 
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.main-footer {
+    width: 100%;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #8b949e;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}

@@ -1,0 +1,55 @@
+.about-page {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about-content-box {
+    background: rgba(22, 27, 34, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(48, 54, 61, 0.8);
+    border-radius: 16px;
+    padding: 50px;
+    margin-top: 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.about-content-box p {
+    margin-bottom: 25px;
+}
+
+.about-content-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================================================
+   התאמה לנייד ומסכים קטנים (טאבלטים אנכיים וסמארטפונים)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .about-content-box {
+        /* הקטנת הריפוד הפנימי כדי לתת לטקסט מקום לנשום לרוחב המסך */
+        padding: 25px 20px; 
+        
+        /* התאמת המרווח העליון שיתאים לפרופורציות של מסך קטן */
+        margin-top: 20px; 
+        
+        /* עיגול פינות מעט מעודן יותר שמתאים למסכים קטנים */
+        border-radius: 12px; 
+    }
+
+    .about-content-box p {
+        /* התאמת גודל הפונט וגובה השורה לקריאות מקסימלית באגודל */
+        font-size: 0.95rem;
+        line-height: 1.6;
+        
+        /* צמצום קל של המרווח בין הפסקאות */
+        margin-bottom: 18px; 
+    }
+}
